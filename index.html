@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>Naturalne bazy do lodów rzemieślniczych - Elements Gelato, Świdnica</title>
+<meta name="description" content="Polskie, naturalne bazy do lodów mlecznych, sorbetów i lodów wegańskich z czystą etykietą. Sklep dla lodziarni, szkolenia, GELATO APP. Elements, Świdnica.">
+<link rel="icon" href="img/favicon.png">
+<link rel="preload" href="fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/hero-tel-720.webp" media="(max-width:767px)" imagesrcset="img/hero-tel-720.webp 720w, img/hero-tel-1080.webp 1080w, img/hero-tel-1800.webp 1800w" imagesizes="(max-aspect-ratio:87/100) 87vh, 100vw" fetchpriority="high">
+<link rel="preload" as="image" href="img/hero-1600.webp" media="(min-width:768px)" imagesrcset="img/hero-1000.webp 1000w, img/hero-1600.webp 1600w, img/hero-2400.webp 2400w" imagesizes="100vw" fetchpriority="high">
+<style>
+@font-face{font-family:"Montserrat";font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/montserrat-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Montserrat";font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/montserrat-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+:root{
+  --zielen:#004D3F;--zielen-2:#00362C;--zielen-j:#E3EEEB;
+  --szary:#F1F4F3;--linia:#DCE3E1;--tekst:#15201D;--tekst-2:#4A5753;
+  --gelato:#3F67B1;--sorbetto:#E0662F;--vegana:#3C8D3A;--latte:#2C4FA0;--wafel:#C98A4B;
+  --maks:1240px;--r:14px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--tekst);font:400 16px/1.6 "Montserrat",system-ui,sans-serif;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+h1,h2,h3{line-height:1.15;margin:0;font-weight:700;letter-spacing:-.01em}
+h2{font-size:clamp(28px,3.4vw,44px)}
+h3{font-size:20px}
+p{margin:0}
+.w{max-width:var(--maks);margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 24px;border-radius:999px;font:600 16px/1 "Montserrat",sans-serif;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn-b{background:#fff;color:var(--zielen)}
+.btn-b:hover{background:var(--zielen-j)}
+.btn-o{border-color:rgba(255,255,255,.8);color:#fff;background:transparent}
+.btn-o:hover{background:rgba(255,255,255,.12)}
+.btn-z{background:var(--zielen);color:#fff}
+.btn-z:hover{background:var(--zielen-2)}
+
+/* rożek - znak z opakowań */
+.rozek{display:inline-block;width:14px;height:20px;flex:none;vertical-align:middle}
+
+/* nagłówek */
+.top{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--linia)}
+.top .w{display:flex;align-items:center;gap:28px;height:68px}
+.logo img{height:50px;width:auto}
+.menu{display:flex;gap:26px;margin-left:auto}
+.menu a{text-decoration:none;font-weight:600;font-size:15px;color:var(--tekst);padding:6px 0;border-bottom:2px solid transparent}
+.menu a:hover{border-color:var(--zielen)}
+.menu a.akt{color:var(--zielen);border-color:var(--zielen)}
+.tel{font-weight:600;font-size:15px;text-decoration:none;color:var(--zielen);white-space:nowrap}
+.kosz{position:relative;display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 16px;border-radius:999px;background:var(--zielen);color:#fff;text-decoration:none;font-weight:600;font-size:14px}
+.kosz svg{width:20px;height:20px}
+.kosz b{min-width:20px;height:20px;border-radius:10px;background:#fff;color:var(--zielen);font-size:12px;display:inline-grid;place-items:center;padding:0 5px}
+.hamb{display:none;width:44px;height:44px;border:0;background:none;padding:10px;cursor:pointer}
+.hamb span{display:block;height:2px;background:var(--zielen);margin:6px 0;border-radius:2px;transition:transform .2s,opacity .2s}
+.top.otw .hamb span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+.top.otw .hamb span:nth-child(2){opacity:0}
+.top.otw .hamb span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+
+/* pierwszy ekran */
+.hero{position:relative;color:#fff;min-height:calc(100svh - 69px);display:flex;align-items:center;overflow:hidden;background:var(--zielen-2)}
+.hero picture,.hero picture img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,54,44,.95) 0%,rgba(0,54,44,.88) 34%,rgba(0,54,44,.25) 60%,rgba(0,54,44,0) 80%,rgba(0,54,44,0) 100%)}
+.hero .w{position:relative;z-index:2;width:100%;padding-top:48px;padding-bottom:48px}
+.hero-txt{max-width:600px}
+.hero h1{font-size:clamp(32px,4.6vw,60px);font-weight:800;letter-spacing:-.02em}
+.hero .lead{margin-top:20px;font-size:clamp(16px,1.4vw,19px);line-height:1.55;max-width:520px;color:rgba(255,255,255,.92)}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .info{margin-top:22px;font-size:15px;color:rgba(255,255,255,.85)}
+.hero .info a{color:#fff;font-weight:600;text-decoration:none;white-space:nowrap}
+
+/* pasek zalet */
+.pasek{background:var(--szary);border-bottom:1px solid var(--linia)}
+.pasek ul{list-style:none;margin:0 auto;padding:18px 20px;max-width:var(--maks);display:flex;flex-wrap:wrap;gap:10px 34px;justify-content:space-between}
+.pasek li{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px;color:var(--zielen)}
+
+/* bazy */
+.sek{padding:88px 0}
+.sek-g{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:36px}
+.sek-g p{max-width:520px;color:var(--tekst-2);margin-top:12px}
+.przew{display:flex;gap:10px}
+.przew button{width:46px;height:46px;border-radius:50%;border:2px solid var(--zielen);background:#fff;color:var(--zielen);cursor:pointer;display:grid;place-items:center}
+.przew button:hover{background:var(--zielen);color:#fff}
+.przew svg{width:18px;height:18px}
+.tor{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 72px)/4);gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding-bottom:6px;cursor:grab}
+.tor::-webkit-scrollbar{display:none}
+.tor.ciag{cursor:grabbing;scroll-snap-type:none}
+.tor.ciag *{pointer-events:none}
+.prod{scroll-snap-align:start;display:flex;flex-direction:column;border:1px solid var(--linia);border-radius:var(--r);overflow:hidden;background:#fff}
+.prod-f{position:relative;aspect-ratio:1/1;display:grid;place-items:center;overflow:hidden;background:var(--szary)}
+.prod-f::before{content:"";position:absolute;width:78%;aspect-ratio:1;border-radius:50%;background:var(--k);opacity:.95}
+.prod-f img{position:absolute;top:7%;left:50%;height:86%;width:auto;transform:translateX(-50%);border-radius:6px;box-shadow:0 14px 30px rgba(0,0,0,.18)}
+.prod-t{padding:20px 20px 22px;display:flex;flex-direction:column;flex:1}
+.prod-typ{font-size:14px;font-weight:600;color:var(--k)}
+.prod h3{margin-top:4px;font-size:22px;font-weight:800;color:var(--tekst)}
+.prod ul{list-style:none;padding:0;margin:14px 0 18px;font-size:15px;color:var(--tekst-2)}
+.prod li{display:flex;gap:10px;align-items:flex-start;margin:4px 0}
+.prod li .rozek{margin-top:3px;width:11px;height:15px}
+.prod-c{margin-top:auto;display:flex;align-items:flex-end;justify-content:space-between;gap:10px;border-top:1px solid var(--linia);padding-top:16px}
+.prod-c small{display:block;font-size:13px;color:var(--tekst-2)}
+.prod-c strong{font-size:20px;font-weight:800;color:var(--tekst);white-space:nowrap}
+.dok{min-height:44px;padding:0 16px;border-radius:999px;border:0;background:var(--zielen);color:#fff;font:600 14px/1 "Montserrat",sans-serif;cursor:pointer;white-space:nowrap}
+.dok:hover{background:var(--zielen-2)}
+.dok.ok{background:var(--vegana)}
+.tez{margin-top:26px;font-size:15px;color:var(--tekst-2)}
+.tez a{color:var(--zielen);font-weight:600}
+
+/* czysta etykieta - sekcja mocna */
+.etyk{background:var(--zielen);color:#fff;display:grid;grid-template-columns:1fr 1fr}
+.etyk-t{padding:88px 64px 88px max(20px,calc((100vw - var(--maks))/2 + 20px))}
+.etyk h2{max-width:520px}
+.etyk .lead{margin-top:18px;max-width:520px;color:rgba(255,255,255,.88)}
+.etyk ul{list-style:none;padding:0;margin:30px 0 0;display:grid;gap:0;max-width:540px}
+.etyk li{display:flex;gap:14px;align-items:center;padding:14px 0;border-top:1px solid rgba(255,255,255,.18);font-weight:500}
+.etyk li:last-child{border-bottom:1px solid rgba(255,255,255,.18)}
+.etyk li i{flex:none;width:26px;height:26px;border-radius:50%;border:2px solid rgba(255,255,255,.7);position:relative}
+.etyk li i::after{content:"";position:absolute;left:4px;right:4px;top:50%;height:2px;background:#fff;transform:translateY(-50%) rotate(-45deg)}
+.etyk-f{position:relative;min-height:520px}
+.etyk-f img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.etyk .sklad{margin-top:28px;font-size:15px;color:rgba(255,255,255,.85);max-width:540px}
+
+/* pracownia - galeria */
+.prac{background:var(--szary)}
+.gal{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 48px)/3.3);gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab}
+.gal::-webkit-scrollbar{display:none}
+.gal.ciag{cursor:grabbing;scroll-snap-type:none}
+.gal.ciag *{pointer-events:none}
+.gal figure{margin:0;scroll-snap-align:start}
+.gal img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:var(--r)}
+.gal figcaption{margin-top:12px;font-size:15px;color:var(--tekst-2)}
+
+/* dla lodziarni */
+.uslugi{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.usl{display:flex;flex-direction:column}
+.usl-f{aspect-ratio:4/3;border-radius:var(--r);overflow:hidden;background:var(--szary)}
+.usl-f img{width:100%;height:100%;object-fit:cover}
+.usl h3{margin-top:18px;display:flex;gap:10px;align-items:center}
+.usl p{margin-top:8px;color:var(--tekst-2);font-size:15px}
+.usl .cena{margin-top:10px;font-weight:700;color:var(--zielen);font-size:15px}
+
+/* o nas */
+.onas{display:grid;grid-template-columns:5fr 6fr;gap:64px;align-items:center}
+.onas-f{border-radius:var(--r);overflow:hidden;max-width:520px;width:100%;justify-self:center}
+.onas-f img{width:100%;height:auto}
+.onas h2{max-width:560px}
+.onas p{margin-top:16px;color:var(--tekst-2);max-width:600px}
+.onas p.mocno{color:var(--tekst);font-weight:600}
+
+/* kontakt */
+.kontakt{background:var(--szary)}
+.kont{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.dane{display:grid;gap:4px;margin-top:22px;font-size:16px}
+.dane a{text-decoration:none;font-weight:600;color:var(--zielen)}
+.dane span{color:var(--tekst-2)}
+.mapa{margin-top:26px;border-radius:var(--r);overflow:hidden;border:1px solid var(--linia);background:#e5e9e8;aspect-ratio:16/10}
+.mapa iframe{width:100%;height:100%;border:0;display:block}
+form{background:#fff;border:1px solid var(--linia);border-radius:var(--r);padding:30px;display:grid;gap:16px}
+form h3{font-size:22px}
+label{display:grid;gap:6px;font-size:14px;font-weight:600}
+input,select,textarea{font:400 16px/1.4 "Montserrat",sans-serif;padding:13px 14px;border:1px solid #C5CFCC;border-radius:10px;background:#fff;color:var(--tekst);width:100%}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--zielen);outline-offset:1px;border-color:var(--zielen)}
+textarea{min-height:120px;resize:vertical}
+.zgoda{display:flex;gap:10px;font-weight:400;font-size:13px;color:var(--tekst-2);align-items:flex-start}
+.zgoda input{width:18px;height:18px;margin-top:2px;flex:none}
+.wyslano{display:none;padding:14px;border-radius:10px;background:var(--zielen-j);color:var(--zielen);font-weight:600}
+
+/* stopka */
+.stopka{background:var(--zielen-2);color:rgba(255,255,255,.82);padding:64px 0 28px;font-size:15px}
+.st{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}
+.st img{height:54px;width:auto}
+.st h4{margin:0 0 12px;color:#fff;font-size:15px}
+.st ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.st a{text-decoration:none}
+.st a:hover{color:#fff}
+.st p{margin-top:14px;max-width:300px}
+.st-d{margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,255,255,.15);display:flex;flex-wrap:wrap;gap:12px 24px;justify-content:space-between;align-items:center;font-size:14px}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+
+@media (max-width:1100px){
+  .menu{gap:18px}
+  .top .tel{display:none}
+  .tor{grid-auto-columns:calc((100% - 48px)/2.4)}
+  .uslugi{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:900px){
+  .menu{display:none;position:absolute;left:0;right:0;top:68px;background:#fff;flex-direction:column;gap:0;padding:8px 20px 20px;border-bottom:1px solid var(--linia);box-shadow:0 14px 24px rgba(0,0,0,.08)}
+  .top.otw .menu{display:flex}
+  .menu a{padding:14px 0;border-bottom:1px solid var(--linia);font-size:17px}
+  .menu a.akt{border-bottom-color:var(--linia)}
+  .hamb{display:block}
+  .kosz{margin-left:auto}
+  .etyk{grid-template-columns:1fr}
+  .etyk-t{padding:64px 20px}
+  .etyk-f{min-height:0;aspect-ratio:4/3}
+  .onas{grid-template-columns:1fr;gap:32px}
+  .kont{grid-template-columns:1fr}
+  .st{grid-template-columns:1fr 1fr}
+  .st>div:first-child{grid-column:1/-1}
+}
+@media (max-width:767px){
+  .top .w{height:60px;gap:12px}
+  .menu{top:60px}
+  .logo img{height:38px}
+  .kosz{height:40px;padding:0 12px}
+  .hero{min-height:calc(100svh - 61px);align-items:flex-end}
+  .hero picture img{object-position:50% 0}
+  .hero::after{background:linear-gradient(180deg,rgba(0,54,44,0) 0%,rgba(0,54,44,0) 40%,rgba(0,54,44,.82) 60%,rgba(0,54,44,.95) 100%)}
+  .hero .w{padding-top:28px;padding-bottom:26px}
+  .hero h1{font-size:30px}
+  .hero .lead{margin-top:14px;font-size:15.5px}
+  .hero .cta{margin-top:24px;gap:10px}
+  .hero .cta .btn{flex:1 1 140px;padding:0 14px;min-height:48px;font-size:15px}
+  .hero .info{margin-top:16px;font-size:14px}
+  .pasek ul{display:grid;grid-template-columns:1fr 1fr;gap:12px 16px}
+  .pasek li{font-size:14px}
+  .sek{padding:60px 0}
+  .sek-g{display:block;margin-bottom:26px}
+  .przew{display:none}
+  .tor{grid-auto-columns:82%;gap:14px;margin:0 -20px;padding:0 20px 6px;scroll-padding:0 20px}
+  .gal{grid-auto-columns:72%;gap:14px;margin:0 -20px;padding:0 20px;scroll-padding:0 20px}
+  .uslugi{grid-template-columns:1fr;gap:34px}
+  .etyk-t{padding:56px 20px}
+  form{padding:22px}
+}
+@media (max-width:380px){
+  .hero h1{font-size:27px}
+  .hero .lead{font-size:15px}
+}
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="w">
+    <a class="logo" href="#" aria-label="Elements - strona główna"><img src="img/logo-zielone.png" alt="elements - natural gelato ingredients" width="560" height="258"></a>
+    <nav class="menu" aria-label="Menu główne">
+      <a href="#bazy" class="akt">Bazy do lodów</a>
+      <a href="#dla-lodziarni">Szkolenia i GELATO APP</a>
+      <a href="#pracownia">Jak powstają</a>
+      <a href="#o-nas">O nas</a>
+      <a href="#kontakt">Kontakt</a>
+    </nav>
+    <a class="tel" href="tel:+48666096156">+48 666 096 156</a>
+    <a class="kosz" href="#bazy" aria-label="Koszyk"><span class="k-txt">Koszyk</span><b id="licznik">0</b></a>
+    <button class="hamb" aria-label="Otwórz menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <picture>
+    <source media="(max-width:767px)" srcset="img/hero-tel-720.webp 720w, img/hero-tel-1080.webp 1080w, img/hero-tel-1800.webp 1800w" sizes="(max-aspect-ratio:87/100) 87vh, 100vw">
+    <img src="img/hero-1600.webp" srcset="img/hero-1000.webp 1000w, img/hero-1600.webp 1600w, img/hero-2400.webp 2400w" sizes="100vw" width="2400" height="1438" alt="Lody kręcone na naturalnych bazach Elements" fetchpriority="high">
+  </picture>
+  <div class="w">
+    <div class="hero-txt">
+      <h1>Naturalne bazy do lodów rzemieślniczych</h1>
+      <p class="lead">Polski producent ze Świdnicy. Błonnik i białka roślinne zamiast sztucznych stabilizatorów, więc lody są kremowe, a etykieta krótka i czysta.</p>
+      <div class="cta">
+        <a class="btn btn-b" href="#bazy">Zobacz bazy</a>
+        <a class="btn btn-o" href="#kontakt">Zamów próbki</a>
+      </div>
+      <p class="info">Zamówienia i doradztwo: <a href="tel:+48666096156">+48 666 096 156</a></p>
+    </div>
+  </div>
+</section>
+
+<div class="pasek">
+  <ul>
+    <li><svg class="rozek" viewBox="0 0 14 20" aria-hidden="true"><circle cx="7" cy="5" r="5" fill="#004D3F"/><path d="M1.6 8.5h10.8L7 19.5z" fill="#C98A4B"/><path d="M3.4 10.5l5.2 5M10.6 10.5l-5.2 5M5 8.8l5 4.6M9 8.8l-5 4.6" stroke="#fff" stroke-width=".7" opacity=".7"/></svg>Polski producent</li>
+    <li><svg class="rozek" viewBox="0 0 14 20" aria-hidden="true"><circle cx="7" cy="5" r="5" fill="#004D3F"/><path d="M1.6 8.5h10.8L7 19.5z" fill="#C98A4B"/><path d="M3.4 10.5l5.2 5M10.6 10.5l-5.2 5M5 8.8l5 4.6M9 8.8l-5 4.6" stroke="#fff" stroke-width=".7" opacity=".7"/></svg>Czysta etykieta</li>
+    <li><svg class="rozek" viewBox="0 0 14 20" aria-hidden="true"><circle cx="7" cy="5" r="5" fill="#004D3F"/><path d="M1.6 8.5h10.8L7 19.5z" fill="#C98A4B"/><path d="M3.4 10.5l5.2 5M10.6 10.5l-5.2 5M5 8.8l5 4.6M9 8.8l-5 4.6" stroke="#fff" stroke-width=".7" opacity=".7"/></svg>Wsparcie technologa</li>
+    <li><svg class="rozek" viewBox="0 0 14 20" aria-hidden="true"><circle cx="7" cy="5" r="5" fill="#004D3F"/><path d="M1.6 8.5h10.8L7 19.5z" fill="#C98A4B"/><path d="M3.4 10.5l5.2 5M10.6 10.5l-5.2 5M5 8.8l5 4.6M9 8.8l-5 4.6" stroke="#fff" stroke-width=".7" opacity=".7"/></svg>-10% na pierwsze zamówienie</li>
+  </ul>
+</div>
+
+<section class="sek" id="bazy">
+  <div class="w">
+    <div class="sek-g">
+      <div>
+        <h2>Cztery bazy, nieskończenie wiele smaków</h2>
+        <p>Każda baza to jeden naturalny element w rożku: mleko, owoc albo liść. Dodajesz swoje składniki, a struktura i kremowość są po naszej stronie.</p>
+      </div>
+      <div class="przew" data-tor="tor-bazy">
+        <button type="button" data-k="-1" aria-label="Poprzednie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12.5 4l-6 6 6 6"/></svg></button>
+        <button type="button" data-k="1" aria-label="Następne"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7.5 4l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+
+    <div class="tor" id="tor-bazy">
+      <article class="prod" style="--k:var(--gelato)">
+        <div class="prod-f"><img src="img/p-gelato.webp" width="724" height="1080" alt="Baza GELATO - opakowanie" loading="lazy"></div>
+        <div class="prod-t">
+          <span class="prod-typ">Baza mleczna</span>
+          <h3>GELATO</h3>
+          <ul>
+            <li><svg class="rozek" viewBox="0 0 14 20" aria-hidden="true"><circle cx="7" cy="5" r="5" fill="#3F67B1"/><path d="M1.6 8.5h10.8L7 19.5z" fill="#C98A4B"/></svg>lody mleczne</li>
+            <li><svg class="rozek" viewBox="0 0 14 20" aria-hidden="true"><circle cx="7" cy="5" r="5" fill="#3F67B1"/><path d="M1.6 8.5h10.8L7 19.5z" fill="#C98A4B"/></svg>lody mleczne bez dodatku cukru</li>
+            <li><svg class="rozek" viewBox="0 0 14 20" aria-hidden="true"><circle cx="7" cy="5" r="5" fill="#3F67B1"/><path d="M1.6 8.5h10.8L7 19.5z" fill="#C98A4B"/></svg>dozowanie 5%</li>
+          </ul>
+          <div class="prod-c"><div><small>karton 12 kg (4 x 3 kg)</small><strong>920,16 zł</strong></div><button class="dok" type="button">Do koszyka</button></div>
+        </div>
+      </article>
+      <article class="prod" style="--k:var(--latte)">
+        <div class="prod-f"><img src="img/p-completa.webp" width="724" height="1080" alt="Baza GELATO COMPLETA - opakowanie" loading="lazy"></div>
+        <div class="prod-t">
+          <span class="prod-typ">Baza mleczna, kompletna</span>
+          <h3>GELATO COMPLETA</h3>
+          <ul>
+            <li><svg class="rozek" viewBox="0 0 14 20" aria-hidden="true"><circle cx="7" cy="5" r="5" fill="#2C4FA0"/><path d="M1.6 8.5h10.8L7 19.5z" fill="#C98A4B"/></svg>lody mleczne i softy</li>
+            <li><svg class="rozek" viewBox="0 0 14 20" aria-hidden="true"><circle cx="7" cy="5" r="5" fill="#2C4FA0"/><path d="M1.6 8.5h10.8L7 19.5z" fill="#C98A4B"/></svg>potrzebujesz tylko mleka i śmietany</li>
+            <li><svg class="rozek" viewBox="0 0 14 20" aria-hidden="true"><circle cx="7" cy="5" r="5" fill="#2C4FA0"/><path d="M1.6 8.5h10.8L7 19.5z" fill="#C98A4B"/></svg>także opakowanie 500 g za 30 zł</li>
+          </ul>
+          <div class="prod-c"><div><small>karton 14 kg</small><strong>604,80 zł</strong></div><button class="dok" type="button">Do koszyka</button></div>
+        </div>
+      </article>
+      <article class="prod" style="--k:var(--sorbetto)">
+        <div class="prod-f"><img src="img/p-sorbetto.webp" width="724" height="1080" alt="Baza SORBETTO - opakowanie" loading="lazy"></div>
+        <div class="prod-t">
+          <span class="prod-typ">Baza owocowa</span>
+          <h3>SORBETTO</h3>
+          <ul>
+            <li><svg class="rozek" viewBox="0 0 14 20" aria-hidden="true"><circle cx="7" cy="5" r="5" fill="#E0662F"/><path d="M1.6 8.5h10.8L7 19.5z" fill="#C98A4B"/></svg>sorbety, także bez dodatku cukru</li>
+            <li><svg class="rozek" viewBox="0 0 14 20" aria-hidden="true"><circle cx="7" cy="5" r="5" fill="#E0662F"/><path d="M1.6 8.5h10.8L7 19.5z" fill="#C98A4B"/></svg>variegatury i lody mleczne owocowe</li>
+            <li><svg class="rozek" viewBox="0 0 14 20" aria-hidden="true"><circle cx="7" cy="5" r="5" fill="#E0662F"/><path d="M1.6 8.5h10.8L7 19.5z" fill="#C98A4B"/></svg>dozowanie 50 g na 1 kg mieszanki</li>
+          </ul>
+          <div class="prod-c"><div><small>karton 12 kg</small><strong>856,80 zł</strong></div><button class="dok" type="button">Do koszyka</button></div>
+        </div>
+      </article>
+      <article class="prod" style="--k:var(--vegana)">
+        <div class="prod-f"><img src="img/p-vegana.webp" width="724" height="1080" alt="Baza VEGANA SF - opakowanie" loading="lazy"></div>
+        <div class="prod-t">
+          <span class="prod-typ">Baza wegańska</span>
+          <h3>VEGANA SF</h3>
+          <ul>
+            <li><svg class="rozek" viewBox="0 0 14 20" aria-hidden="true"><circle cx="7" cy="5" r="5" fill="#3C8D3A"/><path d="M1.6 8.5h10.8L7 19.5z" fill="#C98A4B"/></svg>lody wegańskie, też bez dodatku cukru</li>
+            <li><svg class="rozek" viewBox="0 0 14 20" aria-hidden="true"><circle cx="7" cy="5" r="5" fill="#3C8D3A"/><path d="M1.6 8.5h10.8L7 19.5z" fill="#C98A4B"/></svg>variegatury i sorbety bez dodatku cukru</li>
+            <li><svg class="rozek" viewBox="0 0 14 20" aria-hidden="true"><circle cx="7" cy="5" r="5" fill="#3C8D3A"/><path d="M1.6 8.5h10.8L7 19.5z" fill="#C98A4B"/></svg>dozowanie 23%</li>
+          </ul>
+          <div class="prod-c"><div><small>karton 13,5 kg</small><strong>807,98 zł</strong></div><button class="dok" type="button">Do koszyka</button></div>
+        </div>
+      </article>
+      <article class="prod" style="--k:var(--latte)">
+        <div class="prod-f"><img src="img/p-latte.webp" width="724" height="1080" alt="Baza LATTE - opakowanie" loading="lazy"></div>
+        <div class="prod-t">
+          <span class="prod-typ">Baza mleczna</span>
+          <h3>LATTE</h3>
+          <ul>
+            <li><svg class="rozek" viewBox="0 0 14 20" aria-hidden="true"><circle cx="7" cy="5" r="5" fill="#2C4FA0"/><path d="M1.6 8.5h10.8L7 19.5z" fill="#C98A4B"/></svg>lody mleczne o intensywnym smaku śmietanki</li>
+            <li><svg class="rozek" viewBox="0 0 14 20" aria-hidden="true"><circle cx="7" cy="5" r="5" fill="#2C4FA0"/><path d="M1.6 8.5h10.8L7 19.5z" fill="#C98A4B"/></svg>niezwykle kremowa konsystencja</li>
+          </ul>
+          <div class="prod-c"><div><small>karton 10 kg</small><strong>939,60 zł</strong></div><button class="dok" type="button">Do koszyka</button></div>
+        </div>
+      </article>
+    </div>
+    <p class="tez">W sklepie także LATTE COMPLETA, VEGANA G, mniejsze opakowania do domu i zestaw GELATO BOX. <a href="#kontakt">Nie wiesz, którą bazę wybrać? Doradzimy.</a></p>
+  </div>
+</section>
+
+<section class="etyk" id="etykieta">
+  <div class="etyk-t">
+    <h2>Czego nie znajdziesz w naszych bazach</h2>
+    <p class="lead">Łączymy się z filozofią clean label: krótkie, przejrzyste etykiety, które lodziarnia może bez wstydu pokazać klientom.</p>
+    <ul>
+      <li><i></i>sztucznych stabilizatorów i emulgatorów (np. mono- i diglicerydów kwasów tłuszczowych, karagenu)</li>
+      <li><i></i>uwodornionych tłuszczów roślinnych</li>
+      <li><i></i>sztucznych barwników i aromatów</li>
+      <li><i></i>produktów modyfikowanych genetycznie</li>
+      <li><i></i>syropu glukozowo-fruktozowego</li>
+    </ul>
+    <p class="sklad">Przykład, SORBETTO: błonnik roślinny, pektyna, guma tara, białko roślinne. Tyle.</p>
+  </div>
+  <div class="etyk-f"><img src="img/lody-czekolada.webp" width="1200" height="752" alt="Lody czekoladowe w waflowym rożku" loading="lazy"></div>
+</section>
+
+<section class="sek prac" id="pracownia">
+  <div class="w">
+    <div class="sek-g">
+      <div>
+        <h2>Testujemy w lodziarni, nie tylko na papierze</h2>
+        <p>Nasz frezer chodzi na pełnych obrotach. Każdą recepturę sprawdzamy w praktyce, zanim trafi do Ciebie.</p>
+      </div>
+      <div class="przew" data-tor="gal">
+        <button type="button" data-k="-1" aria-label="Poprzednie"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12.5 4l-6 6 6 6"/></svg></button>
+        <button type="button" data-k="1" aria-label="Następne"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M7.5 4l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+    <div class="gal" id="gal">
+      <figure><img src="img/proces-wlewanie.webp" width="1200" height="1800" alt="Mieszanka czekoladowa wlewana do frezera" loading="lazy"><figcaption>Mieszanka trafia do frezera</figcaption></figure>
+      <figure><img src="img/proces-ciasteczka.webp" width="1200" height="1800" alt="Dodawanie kruszonki ciasteczkowej do lodów" loading="lazy"><figcaption>Dodatki na koniec kręcenia</figcaption></figure>
+      <figure><img src="img/proces-dodatki.webp" width="1200" height="1800" alt="Kawałki owoców w kuwecie z lodami" loading="lazy"><figcaption>Gotowe lody w kuwecie</figcaption></figure>
+      <figure><img src="img/lody-sorbet.webp" width="1200" height="819" alt="Sorbet w waflowym rożku" loading="lazy"><figcaption>Sorbet na bazie SORBETTO</figcaption></figure>
+      <figure><img src="img/lody-dlonie.webp" width="1200" height="876" alt="Lody śmietankowe w rożku" loading="lazy"><figcaption>Kremowe i łatwe do porcjowania</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="sek" id="dla-lodziarni">
+  <div class="w">
+    <div class="sek-g">
+      <div>
+        <h2>Więcej niż bazy: wsparcie dla Twojej lodziarni</h2>
+        <p>Doradzamy, szkolimy i pomagamy policzyć receptury. Nie jesteśmy korporacją, więc każdą lodziarnię traktujemy indywidualnie.</p>
+      </div>
+    </div>
+    <div class="uslugi">
+      <div class="usl">
+        <div class="usl-f"><img src="img/p-app.webp" width="724" height="1027" alt="Aplikacja GELATO APP na telefonie" loading="lazy" style="object-position:50% 30%"></div>
+        <h3>GELATO APP</h3>
+        <p>Planowanie produkcji krok po kroku, gotowe receptury na start i etykiety wartości odżywczych.</p>
+        <p class="cena">14 dni za darmo, potem od 246 zł / mies.</p>
+      </div>
+      <div class="usl">
+        <div class="usl-f"><img src="img/proces-pracownia.webp" width="1200" height="1354" alt="Szkolenie w pracowni lodów" loading="lazy"></div>
+        <h3>Szkolenia</h3>
+        <p>Online i stacjonarne. Pokażemy, jak zrobić kultowe smaki bez drogich, gotowych komponentów smakowych.</p>
+      </div>
+      <div class="usl">
+        <div class="usl-f"><img src="img/p-etykieta.webp" width="760" height="1080" alt="Opakowanie bazy z własną etykietą" loading="lazy" style="object-position:50% 35%"></div>
+        <h3>Mieszanki na zamówienie</h3>
+        <p>Projektujemy bazy według receptury opracowanej specjalnie dla Ciebie, także pod Twoją własną marką.</p>
+      </div>
+      <div class="usl">
+        <div class="usl-f"><img src="img/p-ksiazka.webp" width="724" height="1025" alt="Książka Najlepsze gelato w Twoim domu" loading="lazy"></div>
+        <h3>Lody w domu</h3>
+        <p>Książka "Najlepsze gelato w Twoim domu" i małe opakowania baz dla tych, którzy kręcą lody w kuchni.</p>
+        <p class="cena">Książka 15 zł</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sek prac" id="o-nas">
+  <div class="w onas">
+    <div class="onas-f"><picture><source media="(max-width:767px)" srcset="img/hero-1000.webp" width="1000" height="599"><img src="img/zespol.webp" width="1000" height="1500" alt="Zespół Elements przy pracy" loading="lazy"></picture></div>
+    <div>
+      <h2>Zaczęło się od małej lodziarni pod Wrocławiem</h2>
+      <p class="mocno">Mam na imię Szymon. Z wykształcenia jestem inżynierem budownictwa, ale los chciał, że zostałem lodziarzem.</p>
+      <p>Razem z żoną Natalią otworzyliśmy lodziarnię GAŁKA. Szybko okazało się, że bardziej niż sama lodziarnia fascynuje mnie technologia lodów. Brakowało mi na rynku produktów o czystym składzie, bez tanich wypełniaczy, więc zaczęliśmy robić je sami.</p>
+      <p>Natalia odpowiada za kontrolę jakości produktów i receptur, Dagmara kręci i testuje lody na co dzień. Codziennie liczymy nowe receptury i sprawdzamy je w GAŁCE, zanim trafią do Ciebie.</p>
+      <div class="cta" style="margin-top:26px"><a class="btn btn-z" href="#kontakt">Napisz do nas</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="sek kontakt" id="kontakt">
+  <div class="w kont">
+    <div>
+      <h2>Chcesz przetestować nasze bazy?</h2>
+      <p style="margin-top:14px;color:var(--tekst-2);max-width:520px">Napisz, jakie lody robisz, a dobierzemy bazę i podeślemy próbki. Doradzamy po polsku, angielsku i niemiecku.</p>
+      <div class="dane">
+        <a href="tel:+48666096156">+48 666 096 156 <span>(PL / ENG)</span></a>
+        <a href="tel:+48604593154">+48 604 593 154 <span>(DE)</span></a>
+        <a href="mailto:elements.gelato@gmail.com">elements.gelato@gmail.com</a>
+        <span>CAD Szymon Słomka, Rynek 33, 58-100 Świdnica</span>
+      </div>
+      <div class="mapa"><iframe title="Mapa: Rynek 33, Świdnica" src="https://www.google.com/maps?q=Rynek+33,+58-100+%C5%9Awidnica&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+    <form id="form" novalidate>
+      <h3>Zapytanie o próbki lub ofertę</h3>
+      <label>Imię i nazwa lodziarni<input name="n" autocomplete="organization"></label>
+      <label>E-mail lub telefon<input name="k"></label>
+      <label>Interesuje mnie
+        <select name="t"><option>Bazy mleczne (GELATO, COMPLETA, LATTE)</option><option>Sorbety (SORBETTO)</option><option>Lody wegańskie (VEGANA)</option><option>GELATO APP</option><option>Szkolenie</option><option>Mieszanka na zamówienie</option></select>
+      </label>
+      <label>Wiadomość<textarea name="w" placeholder="Np. ile lodów robicie tygodniowo, jakich smaków brakuje"></textarea></label>
+      <label class="zgoda"><input type="checkbox" required> Zgadzam się na kontakt w sprawie zapytania.</label>
+      <button class="btn btn-z" type="submit">Wyślij zapytanie</button>
+      <p class="wyslano" id="ok">To podgląd strony - formularz zacznie wysyłać wiadomości po wdrożeniu.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="stopka">
+  <div class="w">
+    <div class="st">
+      <div>
+        <img src="img/logo-biale.png" alt="elements - natural gelato ingredients" width="560" height="258">
+        <p>Polskie, naturalne surowce do produkcji lodów rzemieślniczych.</p>
+      </div>
+      <div>
+        <h4>Sklep</h4>
+        <ul><li><a href="#bazy">Bazy do lodów</a></li><li><a href="#dla-lodziarni">GELATO APP</a></li><li><a href="#dla-lodziarni">Szkolenia</a></li><li><a href="#dla-lodziarni">Lody w domu</a></li></ul>
+      </div>
+      <div>
+        <h4>Informacje</h4>
+        <ul><li><a href="#">Dostawa</a></li><li><a href="#">Zwroty i reklamacje</a></li><li><a href="#">Regulamin</a></li><li><a href="#">Polityka prywatności</a></li></ul>
+      </div>
+      <div>
+        <h4>Kontakt</h4>
+        <ul><li><a href="tel:+48666096156">+48 666 096 156</a></li><li><a href="mailto:elements.gelato@gmail.com">elements.gelato@gmail.com</a></li><li>Rynek 33, Świdnica</li><li><a href="https://www.facebook.com/elements.gelato" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/elements.gelato" rel="noopener">Instagram</a></li></ul>
+      </div>
+    </div>
+    <div class="st-d">
+      <span>© 2026 Elements Natural Gelato Ingredients</span>
+      <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=elementsgelato.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var top=document.getElementById('top'),h=top.querySelector('.hamb');
+  h.addEventListener('click',function(){var o=top.classList.toggle('otw');h.setAttribute('aria-expanded',o);});
+  top.querySelectorAll('.menu a').forEach(function(a){a.addEventListener('click',function(){top.classList.remove('otw');h.setAttribute('aria-expanded',false);});});
+  // przesuwanie myszą
+  document.querySelectorAll('.tor,.gal').forEach(function(t){
+    var x0,s0,d=false,ruch=false;
+    t.addEventListener('mousedown',function(e){d=true;ruch=false;x0=e.pageX;s0=t.scrollLeft;});
+    window.addEventListener('mousemove',function(e){if(!d)return;var dx=e.pageX-x0;if(Math.abs(dx)>5){ruch=true;t.classList.add('ciag');}t.scrollLeft=s0-dx;});
+    window.addEventListener('mouseup',function(){if(!d)return;d=false;t.classList.remove('ciag');});
+  });
+  document.querySelectorAll('.przew').forEach(function(p){
+    var t=document.getElementById(p.dataset.tor);
+    p.querySelectorAll('button').forEach(function(b){b.addEventListener('click',function(){var el=t.firstElementChild;t.scrollBy({left:(el.offsetWidth+24)*b.dataset.k,behavior:'smooth'});});});
+  });
+  var n=0,l=document.getElementById('licznik');
+  document.querySelectorAll('.dok').forEach(function(b){b.addEventListener('click',function(){n++;l.textContent=n;b.textContent='W koszyku';b.classList.add('ok');});});
+  document.getElementById('form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('ok').style.display='block';});
+})();
+</script>
+</body>
+</html>
